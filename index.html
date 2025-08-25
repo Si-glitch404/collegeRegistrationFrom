@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+        <h2 class="design">College Registration Form</h2>
+        <form id="registrationForm" action="submit" method="POST">
+            <label for="name">Name:</label>
+            <input placeholder="Enter your name"type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input placeholder="Enter a valid mobile number"type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <label for="email">Email:</label>
+            <input placeholder="Enter a valid Email id"type="email" id="email" name="email" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Business Administration">Business Administration</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+            </select>
+            <form>
+                Gender:
+                <input type="radio"name="gender"value="male">male
+                <input type="radio"name="gender"value="female">Female
+            </form>
+            <div class="separation"></div>
+
+            <button class="button" type="submit" onclick="location.href='Thankyou.html'">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
